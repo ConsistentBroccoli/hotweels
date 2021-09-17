@@ -1,0 +1,46 @@
+.slide{
+    display: flex;
+    align-items: center;
+    background-color: #f3e1d5;
+    background-size: cover;
+    background-position: center;
+
+    height: 454px;
+
+    @media (min-width: 980px) {
+        height: 800px;
+    }
+
+    .container{
+        flex-grow: 2;
+    }
+}
+
+// Контейнер навигации
+.header .owl-carousel .owl-dots{
+    position: absolute;
+    right: 115px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+}
+
+// точка в пагинации
+.header .owl-carousel .owl-dots .owl-dot span{
+    width: 20px;
+    height: 20px;
+    display: block;
+    border-radius: 50%;
+    border: 4.5px solid #404040;
+}
+
+.header .owl-carousel .owl-dots{
+    margin-bottom: 23px;
+}
+
+// Активная точка в пагинации
+.header .owl-carousel .owl-dots .owl-dot.active span{
+    background-color: #fff;
+    border-color: #004cff;
+}

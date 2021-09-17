@@ -1,0 +1,22 @@
+.gallery{
+position: relative;
+display: flex;
+}
+
+.gallery__item{
+ width: 33.33333%;
+ height: auto;
+ object-fit: cover;
+ object-position: center;  
+}
+
+.gallery:after, .gallery:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1.8px;
+    background-color: #232323;
+}
+
+.gallery:after{top: 0;}
+.gallery::before{bottom: 0;}

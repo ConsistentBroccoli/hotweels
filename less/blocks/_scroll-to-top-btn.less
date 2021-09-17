@@ -1,0 +1,29 @@
+.scroll-to-top-btn{
+display: none;
+position: fixed;
+right: 100px;
+bottom: 100px;
+width: 46px;
+height: 46px;
+background-color: #004cff;
+cursor: pointer;
+
+border-radius: 10px;
+border: none;
+padding: 0;
+z-index: 10;
+
+    &:active, &:focus{
+        outline: none;
+    }
+}
+
+.scroll-to-top__arrow{
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    border-top: 3px solid #fff;
+    border-left: 3px solid #fff;
+    transform: rotate(45deg);
+    margin: -4px 0 0 -8px;
+}

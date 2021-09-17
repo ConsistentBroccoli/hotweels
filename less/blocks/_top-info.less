@@ -1,0 +1,26 @@
+.top-info{
+    padding: 20px 0 30px;
+
+    @media (min-width: 992px) {
+        padding: 44px 0 60px;
+        }
+    }
+
+.top-info__row{
+    display: flex;
+    justify-content: space-between;
+    margin: 22px 0;
+    flex-direction: column;
+
+    &:last-child{
+        margin-bottom: 0;
+    }
+
+    @media (min-width: 740px) {
+    flex-direction: row;
+    }
+}
+
+.top-info__row:first-child{
+    margin-top: 0;
+}
